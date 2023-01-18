@@ -231,5 +231,17 @@ body{
     .caja_botones{
         flex-direction: column;
     }
+
+    .texto{
+        font-size: 30px;
+    }
+
+    .texto2{
+        font-size: 15px;
+    }
+
+    .signo1{
+        height: 20px;
+    }
     
 }
