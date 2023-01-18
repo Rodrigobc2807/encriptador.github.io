@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy x Family Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="izquierda">
+        <header>
+            <div class="encabezado">
+                <img class="imagen" src="imagenes/anya04.jpg" alt="Logo del encabezado">
+                <h2 class="texto">Spy x Family Encriptador</h2>
+            </div>
+        </header>
+
+        <main>
+            <div class="ing_text">
+                <textarea class="caja_texto" placeholder="Ingrese su texto aquí" id="entrada" autofocus></textarea>
+                <div class="leyenda">
+                    <img class="signo1" src="imagenes/Vector.png" alt="Logo signo exclamación">
+                    <p class="signo" id="parrafo">Sólo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="caja_botones">
+                    <button class="botones" id="btn_encrip">Encriptar</button>
+                    <button class="botones" id="btn_desencrip">Desencriptar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="derecha">
+        <div>
+            <textarea class="caja_salida" placeholder="Ingrese su texto aquí" id="salida">
+
+            </textarea>
+        </div>
+        <div class="caj_img2" id="img_salida">
+            <img class="imagen2" src="imagenes/anya_lupa2.jpg" alt="Imagen para caja de desencriptado">
+            <img class="imagen2" src="imagenes/anya_lupa.jpg" alt="Imagen para caja de desencriptado">
+        </div>
+        <div class="caja_text" id="texto_de_salida">
+            <h2 class="texto2">Ningún mensaje fue encontrado</h2>
+            <p class="texto2">Ingrese el texto que desee encriptar o desencriptar</p>
+        </div>
+        <div class="caja_copia" id="caja_copia">
+            <button class="boton_copia" id="btn_copia">Copiar</button>
+
+        </div>
+    </div>
+
+    
+</body>
+<script src="./js/codigo.js"></script>
+
+</html>
+    

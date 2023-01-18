@@ -1,0 +1,235 @@
+body{
+    background-color: #7cb342;
+    margin: 10px;
+    display: flex;
+    width: 95%;    
+}
+
+    .izquierda{
+        width: 60%;
+    }
+
+        header{
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+
+
+            .encabezado{
+                display:flex;
+                justify-content:first baseline;
+                margin:10px 0;
+                width: 100%;
+            }
+
+                .imagen{
+                    width: 25%;
+                    height: auto;
+                }
+
+
+                .texto{
+                    width: 60%;
+                    text-align:left;
+                    font-size: 40px;
+                    font-weight: bold;
+                    font-style: italic;
+                    margin:auto 0 auto 20px;
+                    font-family: 'Oswald', sans-serif;
+                }
+
+        main{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        }
+
+            .ing_text{
+                width: 70%;
+            }
+
+                .caja_texto{
+                    width: 90%;
+                    height: 15em;
+                    font-size: 1.5em;
+                    background-color: #c5e1a5;
+                    color: black;
+                    border: none;
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .caja_texto::placeholder{
+                    color: #757575;
+                }
+
+                .leyenda{
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                    .signo{
+                        margin-top: 50px;
+                        margin-bottom: 0;
+                        margin-left: 5px;
+                    }
+
+                    .signo1{
+                        margin-top: 50px;
+                        margin-bottom: 0;
+                    }
+
+                .caja_botones{
+                    width: 90%;
+                    display: flex;
+                    justify-content:space-between;
+                }
+
+
+                    .botones{
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        background-color: #c5e1a5;
+                        color: black;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border-color: antiquewhite;
+                        margin-top: 1em;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+
+                    .botones:hover{
+                        background-color: #558b2f;
+                    }
+
+    .derecha{
+        width: 30%;
+        height: 36em;
+        margin:3%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .caja_salida{
+            width: 90%;
+            height: 20em;
+            position: relative;
+            visibility: hidden;
+            border:none;
+            margin: 4%;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        .caj_img2{
+            position:relative;
+        }
+
+            .imagen2 {
+                position: absolute;
+                left:15%;
+                top: -20em;
+                transition: opacity 0.3s ease-in-out;
+                width: 70%;
+            }
+
+            .imagen2:hover {
+                opacity: 0;
+            }
+
+        .caja_text {
+            width: 100%;
+            position: relative;
+            top:0em;
+        }
+
+
+            .texto2{
+                width: 90%;
+                position: relative;
+                margin: 0 auto;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+
+
+        .caja_copia{
+            width: 90%;
+            position: relative;
+            top:-4em;
+            left:40%
+        }
+
+            .boton_copia{
+                font-size: 1.5em;
+                font-weight: bold;
+                background-color: #c5e1a5;
+                color: black;
+                padding: 10px;
+                border-radius: 10px;
+                border-color: antiquewhite;
+                visibility: hidden;
+                position: absolute;
+                top:2.5em;
+            }
+
+            .boton_copia:hover{
+                background-color: #558b2f;
+            }
+
+
+@media screen and (max-width:850px) {
+    body{
+        flex-direction: column;
+    }
+
+    .izquierda{
+        align-items: center;
+        width: 80%;
+        margin:auto 10%;
+    }
+
+    .imagen{
+        width: 45%;
+    }
+
+    .imagen2{
+        visibility: hidden;
+    }
+
+    .derecha{
+        width: 80%;
+        height: 100px;
+        margin:10% 10% 0 10%;
+    }
+
+    .ing_text{
+        align-items: center;
+    }
+
+    .caja_text{
+        top:-4.5em;
+    }
+
+    .caja_salida{
+        margin:1% 4%;
+        height: 4em;
+    }
+
+    .boton_copia{
+        top:1em;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .caja_botones{
+        flex-direction: column;
+    }
+    
+}
